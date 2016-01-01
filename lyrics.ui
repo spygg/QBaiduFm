@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lyrics</class>
+ <widget class="QFrame" name="Lyrics">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>758</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;平凡之路&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;作词：韩寒,朴树&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;作曲：朴树&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#aaaa00;&quot;&gt;演唱：朴树&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;徘徊着的 在路上的&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;你要走吗&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;易碎的 骄傲着&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;那也曾是我的模样&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;沸腾着的 不安着的&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;你要去哪&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;谜一样的 沉默着的&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;故事你真的在听吗&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;我曾经跨过山和大海 也穿过人山人海 我曾经拥有着一切 转眼都飘散如烟 我曾经失落失望失掉所有方向 直到看见平凡才是唯一的答案&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;当你仍然 还在幻想&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;你的明天&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;她会好吗 还是更烂&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;对我而言是另一天&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;我曾经毁了我的一切 只想永远地离开 我曾经堕入无边黑暗 想挣扎无法自拔 我曾经象你象他象那野草野花 绝望着 渴望着 哭着笑着平凡着&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;向前走 就这么走 就算你被给过什么 向前走 就这么走 就算你被夺走什么 向前走 就这么走 就算你会错过什么 向前走 就这么走 就算你会&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;我曾经跨过山和大海 也穿过人山人海 我曾经拥有着一切 转眼都飘散如烟 我曾经失落失望失掉所有方向 直到看见平凡才是唯一的答案&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;我曾经毁了我的一切 只想永远地离开 我曾经堕入无边黑暗 想挣扎无法自拔 我曾经像你像他像那野草野花 绝望着 渴望着 哭着笑着平凡着&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

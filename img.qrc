@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/play.svg</file>
+        <file>img/pause.svg</file>
+        <file>img/menu.svg</file>
+        <file>img/lyricmask.png</file>
+        <file>img/lrc.svg</file>
+        <file>img/loop_random.svg</file>
+        <file>img/loop_one.svg</file>
+        <file>img/loop_no.svg</file>
+        <file>img/loop_all.svg</file>
+        <file>img/handle.png</file>
+        <file>img/forward.svg</file>
+        <file>img/cd.png</file>
+        <file>img/backward.svg</file>
+        <file>img/setting.png</file>
+        <file>img/volume.png</file>
+        <file>img/downLoad.png</file>
+        <file>img/baidu.jpg</file>
+        <file>img/cancel.png</file>
+        <file>img/back.png</file>
+        <file>img/play.png</file>
+        <file>img/pause.png</file>
+        <file>img/baiduFm.png</file>
+    </qresource>
+</RCC>
