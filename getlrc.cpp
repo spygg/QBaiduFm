@@ -10,7 +10,8 @@ QString GetLrc::getLrc(QString url)
     QNetworkRequest networkRequest;
     QNetworkAccessManager networkManager;
 
-    url = "http://musicdata.baidu.com" + url;
+    qDebug() << url;
+    //url = "http://musicdata.baidu.com" + url;
     networkRequest.setUrl(QUrl(url));
 
     QNetworkReply *reply = networkManager.get(networkRequest);
