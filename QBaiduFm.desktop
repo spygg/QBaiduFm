@@ -1,14 +1,30 @@
 [Desktop Entry]
-Type=Application
-Version=1.0
-Encoding=UTF-8
-Name=QDoubanFM
-GenericName=DoubanFM Client
-Comment=A QBaiduFm Client
-Exec=doubanfm-qt
-Icon=/usr/share/pixmaps/baiduFm.png
+Name=QBaiduFm
+Name[zh_CN]=QBaiduFm
+Name[zh_HK]=QBaiduFm
+Name[zh_TW]=QBaiduFm
+GenericName=Music Player
+GenericName[af]=Musiekspeler
+GenericName[zh_CN]=音乐播放器
+GenericName[zh_HK]=音樂播放器
+GenericName[zh_TW]=音樂播放器
+X-GNOME-FullName=QBaiduFm Music Player
+X-GNOME-FullName[zh_CN]=QBaiduFm 音乐播放器
+X-GNOME-FullName[zh_HK]=QBaiduFm 音樂播放器
+X-GNOME-FullName[zh_TW]=QBaiduFm 音樂播放器
+Comment=Play and organize your music collection
+Comment[zh_CN]=播放并组织您的音乐收藏
+Comment[zh_HK]=播放及管理音樂收藏
+Comment[zh_TW]=播放及管理音樂收藏
+Keywords=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;
+Keywords[zh_CN]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;音频;音乐;歌曲;光盘;播客;播放列表;电台;
+Keywords[zh_HK]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;音訊;音樂;歌曲;歌;播客;唱片;播放清單;電臺;電台;廣播;
+Keywords[zh_TW]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;音訊;音樂;歌曲;歌;播客;唱片;播放清單;電臺;電台;廣播;
+Exec=QBaiduFm %U
 Terminal=false
-Categories=GNOME;Appliation;Network
+Type=Application
+Icon=/usr/share/pixmaps/baiduFm.png
+Categories=GNOME;GTK;AudioVideo;Audio;Player;
+MimeType=application/x-ogg;application/ogg;audio/x-vorbis+ogg;audio/x-scpls;audio/x-mp3;audio/x-mpeg;audio/mpeg;audio/x-mpegurl;audio/x-flac;audio/mp4;x-scheme-handler/itms;x-scheme-handler/itmss;
+StartupNotify=true
 
-
-Name[zh_CN]=百度FM
