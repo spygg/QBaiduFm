@@ -13,6 +13,8 @@ TEMPLATE = app
 
 CONFIG += c++11
 
+include(./qhotkey.pri)
+
 SOURCES += main.cpp\
         widget.cpp \
     aristpicture.cpp \

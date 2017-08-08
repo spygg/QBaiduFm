@@ -35,7 +35,7 @@ public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
 
-private slots:
+public slots:
     void on_settingtoolButton_clicked();
 
     void on_voltoolButton_clicked();

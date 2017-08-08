@@ -7,6 +7,7 @@
 #include <QPropertyAnimation>
 #include <QSettings>
 #include <QDir>
+#include <QHotkey>
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -40,6 +41,12 @@ Widget::Widget(QWidget *parent) :
 
     ui->volSlider->setRange(0, 100);
     ui->volSlider->setValue(60);
+
+
+
+
+
+
 
 
     //歌曲频道信息
