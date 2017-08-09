@@ -219,7 +219,7 @@ void Widget::nextSong()
 
 void Widget::play(int index)
 {
-    if(index > m_songIdList.size())
+    if(index > m_songIdList.size() || index < 0)
         return;
 
     GetSongRealLink getSongLink;
