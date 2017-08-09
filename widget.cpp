@@ -191,7 +191,7 @@ void Widget::prevSong()
 {
     qDebug() << "上一曲";
 
-    if(m_iCurrentSongIndex < 0 || m_iCurrentSongIndex >= m_songIdList.size() - 1)
+    if(m_iCurrentSongIndex <= 0 || m_iCurrentSongIndex >= m_songIdList.size() - 1)
     {
         initSongIdList();
         return;
@@ -206,7 +206,7 @@ void Widget::prevSong()
 void Widget::nextSong()
 {
     //qDebug() << "下一首" << m_iCurrentSongIndex << m_songIdList.size();
-    if(m_iCurrentSongIndex < 0 || m_iCurrentSongIndex >= m_songIdList.size() - 1)
+    if(m_iCurrentSongIndex <= 0 || m_iCurrentSongIndex >= m_songIdList.size() - 1)
     {
         initSongIdList();
         return;
