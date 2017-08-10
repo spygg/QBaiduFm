@@ -126,6 +126,7 @@ void Widget::initSongIdList()
 
     QString info = m_currentChannelId.channelName + " 共有歌曲: " + QString::number(m_songIdList.size());
     emit channelInfoSignal(info);
+    m_iCurrentSongIndex = 0;
     play(0);
 }
 
@@ -191,7 +192,7 @@ void Widget::prevSong()
 {
     qDebug() << "上一曲";
 
-    if(m_iCurrentSongIndex <= 0 || m_iCurrentSongIndex >= m_songIdList.size() - 1)
+    if(m_iCurrentSongIndex <= 0)
     {
         initSongIdList();
         return;
@@ -205,8 +206,8 @@ void Widget::prevSong()
 
 void Widget::nextSong()
 {
-    //qDebug() << "下一首" << m_iCurrentSongIndex << m_songIdList.size();
-    if(m_iCurrentSongIndex <= 0 || m_iCurrentSongIndex >= m_songIdList.size() - 1)
+    qDebug() << "下一首" << m_iCurrentSongIndex << m_songIdList.size();
+    if(m_iCurrentSongIndex >= m_songIdList.size())
     {
         initSongIdList();
         return;
@@ -219,7 +220,7 @@ void Widget::nextSong()
 
 void Widget::play(int index)
 {
-    if(index > m_songIdList.size() || index < 0)
+    if(index >= m_songIdList.size() || index < 0)
         return;
 
     GetSongRealLink getSongLink;
