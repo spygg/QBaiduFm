@@ -77,6 +77,8 @@ private:
 
 signals:
     void channelInfoSignal(QString channel);
+private slots:
+    void errorOccur(QMediaPlayer::Error);
 };
 
 #endif // WIDGET_H

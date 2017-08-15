@@ -33,6 +33,7 @@ Widget::Widget(QWidget *parent) :
     connect(m_pPlayer, &QMediaPlayer::positionChanged, this, &Widget::positionChanged);
     connect(m_pPlayer, &QMediaPlayer::durationChanged, this, &Widget::durationChanged);
     connect(m_pPlayer, SIGNAL(positionChanged(qint64)), ui->lycWidget, SLOT(setTickLrc(qint64)));
+    connect(m_pPlayer, SIGNAL(error(QMediaPlayer::Error)), this, SLOT(errorOccur(QMediaPlayer::Error)));
     connect(ui->volSlider,  &QSlider::valueChanged, this, &Widget::volChannged);
     connect(ui->progressSlider, &QSlider::sliderMoved, this, &Widget::setPosition);
     connect(ui->aristPicWidget, SIGNAL(pauseSignal(bool)), this, SLOT(pauseSlot(bool)));
@@ -41,13 +42,6 @@ Widget::Widget(QWidget *parent) :
 
     ui->volSlider->setRange(0, 100);
     ui->volSlider->setValue(60);
-
-
-
-
-
-
-
 
     //歌曲频道信息
     QSettings settings(QSettings::IniFormat, QSettings::UserScope, "QBaiduFm", "QBaiduFm");
@@ -65,6 +59,18 @@ Widget::Widget(QWidget *parent) :
     ui->channelwidget->channelSelected(iChannel);
 }
 
+void Widget::errorOccur(QMediaPlayer::Error error)
+{
+    ui->lycWidget->setLrc(m_pPlayer->errorString());
+
+    qDebug() << "User Debug ---->error occured!" << m_pPlayer->errorString() << error;
+
+    if(QMediaPlayer::NetworkError != error)
+    {
+        nextSong();
+    }
+}
+
 void Widget::pauseSlot(bool pause)
 {
     if(pause)
@@ -77,9 +83,12 @@ void Widget::volChannged(qint64 position)
 {
     m_pPlayer->setVolume(position);
 }
+
 void Widget::mediaStatusChanged(QMediaPlayer::MediaStatus status)
 {
-    if(status == QMediaPlayer::EndOfMedia /*|| status == QMediaPlayer::NoMedia*/)
+    if(status == QMediaPlayer::EndOfMedia ||
+       status == QMediaPlayer::NoMedia ||
+       status == QMediaPlayer::InvalidMedia)
     {
         //qDebug() << "播放完成";
         nextSong();
