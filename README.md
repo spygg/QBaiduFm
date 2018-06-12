@@ -32,7 +32,8 @@ win10下的
 安装:
 
 	1. ubuntu下
-		sudo install.sh
+		cd QBaiduFm
+		sudo ./install.sh
 		
 	2. Windows 下
 		无(直接运行exe好了)
