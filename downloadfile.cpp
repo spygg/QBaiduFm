@@ -11,6 +11,7 @@ void DownLoadFile::getMp3File(QString fileName, QString url)
     QNetworkAccessManager networkManager;
 
     networkRequest.setUrl(QUrl(url));
+    qDebug() << url;
 
     QNetworkReply *reply = networkManager.get(networkRequest);
 
